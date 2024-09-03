@@ -1,0 +1,21 @@
+[package]
+name = "img_classify_core"
+version = "0.1.0"
+edition = "2021"
+[features]
+default = []
+fat = []
+
+[dependencies]
+anyhow = "1.0.86"
+candle-core = "0.6.0"
+candle-nn = "0.6.0"
+candle-transformers = "0.6.0"
+#clap = { version = "4.5.16", features = ["derive"] }
+hf-hub = { git = "https://github.com/huggingface/hf-hub.git", rev = "refs/pull/68/head"}
+image = "0.25.2"
+rand = "0.8.5"
+rust-embed = "8.5.0"
+tokenizers = "0.20.0"
+tracing = "0.1.40"
+tracing-subscriber = "0.3.18"
